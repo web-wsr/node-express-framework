@@ -1,0 +1,28 @@
+{
+  "name": "node-express-framework",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:rollback:all": "knex migrate:rollback --all",
+    "seed:run": "knex seed:run"
+  },
+  "dependencies": {
+    "async-validator": "^4.2.5",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1"
+  }
+}
